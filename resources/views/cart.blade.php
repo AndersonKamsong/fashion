@@ -1,7 +1,5 @@
 @extends('layout')
 
-@section('title','About')
-
 @section('content')
 <div class="container mx-auto px-6">
     <h3 class="text-gray-700 text-2xl font-medium">Checkout</h3>

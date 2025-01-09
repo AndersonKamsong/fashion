@@ -3,10 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Product;
+
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+
+    public function getProducts(){
+        $products = Product::all();
+        return view('home' ,compact('products'));
+    }
+
     /**
      * Display a listing of the resource.
      */
